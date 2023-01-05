@@ -6,7 +6,7 @@ body {
   justify-content: center;
   height: 100vh;
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .conversion-app {
@@ -17,7 +17,7 @@ body {
 .hero {
   color: white;
   height: 285px;
-  background: #6943FF;
+  background: #6943ff;
   padding-top: 30px;
 }
 
@@ -34,7 +34,7 @@ body {
   height: 83px;
   margin-bottom: 27px;
   background: transparent;
-  border: 2px solid #B295FF;
+  border: 2px solid #b295ff;
   border-radius: 5px;
   color: white;
   text-align: center;
@@ -44,43 +44,39 @@ body {
 
 .btn {
   padding: 9px 27px;
-  color: #3D3D3D;
+  color: #3d3d3d;
   font-size: 16px;
   font-weight: 500;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.main-section {
+.main {
   padding-top: 36px;
 }
 
-.converted-section {
+.section {
   height: 100px;
   width: 500px;
   background-color: white;
-  margin: 0 auto;
-  margin-bottom: 26px;
+  margin: 0 auto 26px;
   border-radius: 5px;
-  
 }
 
 .metric {
   margin: 0;
-  color: #5A537B;
+  color: #5a537b;
   font-size: 20px;
   padding: 25px 0 10px;
-
 }
 
-.converted-result{
+.converted-result {
   margin: 0;
   padding: 0;
-  color: #3D3D3D;
+  color: #3d3d3d;
   font-size: 14px;
   font-weight: 400;
 }
-
