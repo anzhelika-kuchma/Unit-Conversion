@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  background-color: rgb(63, 63, 63);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.conversion-app {
+  width: 550px;
+  background: #f4f4f4;
+}
+
+.hero {
+  color: white;
+  height: 285px;
+  background: #6943FF;
+  padding-top: 30px;
+}
+
+.title {
+  font-size: 28px;
+  line-height: 38px;
+  margin: 0 0 35px;
+}
+
+.input {
+  display: block;
+  margin: 0 auto;
+  width: 117px;
+  height: 83px;
+  margin-bottom: 27px;
+  background: transparent;
+  border: 2px solid #B295FF;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  font-size: 58px;
+  font-weight: 800;
+}
+
+.btn {
+  padding: 9px 27px;
+  color: #3D3D3D;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-section {
+  padding-top: 36px;
+}
+
+.converted-section {
+  height: 100px;
+  width: 500px;
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 26px;
+  border-radius: 5px;
+  
+}
+
+.metric {
+  margin: 0;
+  color: #5A537B;
+  font-size: 20px;
+  padding: 25px 0 10px;
+
+}
+
+.converted-result{
+  margin: 0;
+  padding: 0;
+  color: #3D3D3D;
+  font-size: 14px;
+  font-weight: 400;
+}
+
