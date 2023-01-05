@@ -1,25 +1,35 @@
-let input
-const meter = 3.281 //feet
-const liter = 0.264 //gallon
-const kilogram = 2.204 // pound
+let inputEl = document.getElementById("input")
+let convertBtn = document.getElementById("convert-btn")
+let lengthEl = document.getElementById("length")
+let volumeEl = document.getElementById("volume")
+let massEl = document.getElementById("mass")
 
-let btnEl = document.getElementById("btn")
+const meterToFeet = 3.281 //feet
+const literToGallon = 0.264 //gallon
+const kilogramToPound = 2.204 // pound
 
-btnEl.addEventListener("click", function(){
-  input = document.getElementById("input").value
-  convert()
-})
+convertBtn.addEventListener("click", function () {
+  baseValue = inputEl.value
+  console.log(baseValue)
+  convert();
+});
 
 function convert() {
+  lengthEl.innerHTML = `${baseValue} meters = ${(
+    meterToFeet * baseValue
+  ).toFixed(3)} feet | ${baseValue} feet = ${(baseValue / meterToFeet).toFixed(
+    3
+  )} meters`
 
-let length = document.getElementById("length")
-length.innerHTML = `${input} meters = ${(meter * input).toFixed(3)} feet | ${input} feet = ${(input / meter).toFixed(3)} meters`
+  volumeEl.innerHTML = `${baseValue} liters = ${(
+    literToGallon * baseValue
+  ).toFixed(3)} gallons | ${baseValue} gallons = ${(
+    baseValue / literToGallon
+  ).toFixed(3)} liters`
 
-let volume = document.getElementById("volume")
-volume.innerHTML = `${input} liters = ${(liter * input).toFixed(3)} gallons | ${input} gallons = ${(input / liter).toFixed(3)} liters`
-
-let mass = document.getElementById("mass")
-mass.innerHTML = `${input} kilos = ${(kilogram * input).toFixed(3)} pounds | ${input} pounds = ${(input / kilogram).toFixed(3)} kilos`
-
-
+  massEl.innerHTML = `${baseValue} kilos = ${(
+    kilogramToPound * baseValue
+  ).toFixed(3)} pounds | ${baseValue} pounds = ${(
+    baseValue / kilogramToPound
+  ).toFixed(3)} kilos`
 }
